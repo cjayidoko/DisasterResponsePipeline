@@ -89,7 +89,7 @@ def save_data(df, database_filename):
     #df.to_sql("ready_df", engine,if_exists = 'replac', index=False)
 
 
-def Mmain():
+def main():
         messages_filepath = 'disaster_messages.csv'
         categories_filepath = 'disaster_categories.csv'
         database_filepath = 'DisasterResponse.db'
@@ -104,3 +104,6 @@ def Mmain():
         save_data(df, database_filepath)
         
         print('Cleaned data saved to database!')
+
+if __name__ == '__main__':
+    main()
